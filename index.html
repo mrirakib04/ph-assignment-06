@@ -107,6 +107,49 @@
       </div>
     </header>
     <main class="max-w-[1480px] mx-auto flex flex-col items-center w-full">
+      <!-- Container -->
+      <div id="involve" class="max-w-7xl mx-auto px-5 py-10 w-full">
+        <h1
+          class="lg:text-4xl md:text-3xl text-2xl font-bold text-center mb-8 text-green-800"
+        >
+          Choose Your Trees
+        </h1>
+
+        <div class="grid grid-cols-12 gap-5">
+          <!-- Categories -->
+          <div
+            class="lg:col-span-2 sm:col-span-3 col-span-12 bg-white rounded-xl shadow-sm p-4"
+          >
+            <h2 class="font-semibold mb-4">Categories</h2>
+            <ul id="category-list" class="flex flex-col gap-2 w-full"></ul>
+          </div>
+          <!-- Trees -->
+          <div
+            id="card-container"
+            class="lg:col-span-7 sm:col-span-6 col-span-12 grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-6"
+          ></div>
+
+          <!-- Cart -->
+          <aside
+            class="sm:col-span-3 col-span-12 bg-white rounded-xl shadow-sm p-4"
+          >
+            <h2 class="font-semibold mb-4">Your Cart</h2>
+
+            <!-- Cart items will appear here -->
+            <div
+              id="cart-container"
+              class="w-full flex flex-col items-center gap-2"
+            ></div>
+
+            <!-- Total -->
+            <div class="flex justify-between items-center font-semibold mt-4">
+              <span>Total:</span>
+              <span id="cart-total">৳0</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+
       <!-- About the campaign -->
       <div id="about" class="py-16 px-10 md:px-20 bg-green-50">
         <h2
